@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: serif;
+}
+
+ul {
+  list-style: none;
+}
+
+h3 {
+  height: 40px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.profileContainer {
+  background: #d1e4f7;
+  padding: 20px;
+}
+
+.profileContainer .contacts {
+  margin: 0;
+  background: #fff;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.profileContainer .contacts li {
+  font-size: 20px;
+}
+
+.profileContainer .titleEdit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  padding-right: 40px;
+}
+
+.profileContainer .titleEdit a {
+  width: 35px;
+  height: 30px;
+  background: red;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+}
+/*# sourceMappingURL=profile.css.map */

@@ -1,0 +1,84 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(209, 228, 247);
+}
+
+.examinationsContainer{
+    padding: 20px;
+    .scrollBar{
+        font-size: 20px;
+        font-weight: bold;
+        background: #fff;
+        border-radius: 10px;
+
+        a{
+            text-decoration: none;
+            color: #000;
+
+            &:hover{
+                color: red;
+            }
+
+            &:active{
+                color: red;
+            }
+        }
+
+        ul{
+            display: flex;
+            place-content: space-between;
+            padding: 20px;
+            list-style: none;
+
+            li{
+                margin:0 70px 0 20px;
+            }
+        }
+
+    }
+
+    .content{
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+
+        .contentHeader{
+            h3{
+                padding: 0;
+                margin: 0;
+            }
+            p{
+                font-size: 20px;
+            }
+
+            hr{
+                color: rgb(209, 228, 247);
+            }
+            .generateContent{
+                padding: 20px;
+
+                label{
+                    font-size: 20px;
+                }
+
+                select{
+                    width: 100%;
+                    outline: none;
+                    font-size: 20px;
+                    margin-bottom: 40px;
+                }
+
+                input{
+                    background: red;
+                    border-radius: 20px;
+                    width: 5rem;
+                    height: 2.3rem;
+                    color: #fff;
+                    float: right;
+                    border: none;
+                }
+            }
+        }
+    }
+}
