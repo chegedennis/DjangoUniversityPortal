@@ -1,0 +1,112 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(209, 228, 247);
+}
+
+.examinationsContainer{
+    padding: 20px;
+    .scrollBar{
+        font-size: 20px;
+        font-weight: bold;
+        background: #fff;
+        border-radius: 10px;
+
+        a{
+            text-decoration: none;
+            color: #000;
+
+            &:hover{
+                color: red;
+            }
+
+            &:active{
+                color: red;
+            }
+        }
+
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 20px;
+            list-style: none;
+            text-align: center;
+
+            li{
+                margin: 20px;
+            }
+        }
+
+    }
+
+    .content{
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+
+        .contentHeader{
+            p{
+                font-size: 20px;
+                font-weight: bold;
+                span{
+                    font-weight: normal;
+                }
+            }
+
+            hr{
+                color: rgb(209, 228, 247);
+            }
+            .contentTitle{
+                display: flex;
+                place-content: space-between;
+
+                button{
+                    background: red;
+                    border-radius: 20px;
+                    width: 60px;
+                    height: 30px;
+                    color: #fff;
+                    margin-right: 30px;
+                }
+            }
+
+            .programme{
+                padding: 20px;
+            }
+
+            .generateContent{
+                display: flex;
+                padding: 20px;
+
+                label{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+
+                select{
+                    width: 160px;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    outline: none;
+                    font-size: 20px;
+                }
+
+                input{
+                    margin: 20px;
+                    background: red;
+                    border-radius: 20px;
+                    width: 70px;
+                    height: 30px;
+                    color: #fff;
+                    border: none;
+                }
+            }
+        }
+
+        .userContent{
+            font-size: 20px;
+            padding: 40px;
+        }
+    }
+}

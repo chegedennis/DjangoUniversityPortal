@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    {% block style %}
+    <link rel="stylesheet" href="{%static 'portal/styles/home.css'%}">
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <div class="userDetails">
+            <a id="user" href="#">{{request.user.username}}</a>
+            <div class="userLinks">
+                <h3 id="btnClose">X</h3>
+                <ul>
+                    <li><a href="{% url 'messages' %}">My Messages</a></li>
+                    <li><a href="{% url 'profile' %}">Profile</a></li>
+                    <li><a href="">Change Password</a></li>
+                    <li><a href="{% url 'logoutView' %}">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="homeContainer">
+        <section class="navigation">
+            <div class="logo">
+                <img src="{% static 'portal/images/avatar.png' %}" alt="institution logo">
+            </div>
+            <div class="navigationElements">
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'news' %}">News & Events</a></li>
+                    <li><a href="{% url 'reporting' %}">Reporting</a></li>
+                    <li><a href="{% url 'fees' %}">Fees</a></li>
+                    <li><a href="{% url 'units' %}">Units</a></li>
+                    <li><a href="{% url 'exams' %}">Examinations</a></li>
+                    <li><a href="{% url 'hostel' %}">Hostel Booking</a></li>
+                    <li><a href="{% url 'messages' %}">Messages</a></li>
+                    <li><a href="{% url 'clearance' %}">Clearance</a></li>
+                </ul>
+            </div>
+        </section>
+        {% block content %}
+        <section class="details">
+            <div class="news">
+                <div class="newsItem">
+                    <h3>Latest News</h3>
+                    <hr>
+                    <section>
+                        <h3>Summary of Rules and Regulations <span>17 may 2020</span></h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Aliquam odit sed doloremque, totam officiis maxime. 
+                            Enim, veritatis itaque ipsum beatae temporibus aperiam. 
+                            Architecto assumenda provident reprehenderit 
+                            repellat debitis vel excepturi.
+                        </p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Aliquam odit sed doloremque, totam officiis maxime. 
+                            Enim, veritatis itaque ipsum beatae temporibus aperiam. 
+                            Architecto assumenda provident reprehenderit 
+                            repellat debitis vel excepturi.
+                        </p>
+                        <hr>
+                        <div><a href="{% url 'news' %}">Read More</a></div>
+                    </section>
+                    <section>
+                        <h3>STUDENT-LECTURE EVALUTION FORM <span>17 may 2020</span></h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Aliquam odit sed doloremque, totam officiis maxime. 
+                            Enim, veritatis itaque ipsum beatae temporibus aperiam. 
+                            Architecto assumenda provident reprehenderit 
+                            repellat debitis vel excepturi.
+                        </p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Aliquam odit sed doloremque, totam officiis maxime. 
+                            Enim, veritatis itaque ipsum beatae temporibus aperiam. 
+                            Architecto assumenda provident reprehenderit 
+                            repellat debitis vel excepturi.
+                        </p>
+                        <hr>
+                        <div><a href="{% url 'news' %}">Read More</a></div>
+                    </section>
+                    
+                </div>
+            </div>
+            <div class="info">
+                <div class="fees">
+                    <p>Your fees balance is:</p>
+                    <h3>KES 4800</h3>
+                </div>
+                <div class="hostel">
+                    <h3>Current Hostel</h3>
+                    <p>Hostel Name: MARA</p>
+                    <p>Room Name: D103</p>
+                </div>
+            </div>
+        </section>
+        {% endblock %}
+    </div>
+<script>
+    const btnClose = document.getElementById("btnClose")
+        profile = document.querySelector(".userLinks")
+        userLink = document.querySelector("#user");
+    userLink.addEventListener("click", ()=>{
+        profile.style.display = "block";
+    })
+    btnClose.addEventListener("click", ()=>{
+        profile.style.display = "none";
+    })
+</script>
+</body>
+</html>
