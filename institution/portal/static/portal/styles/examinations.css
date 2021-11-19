@@ -1,0 +1,111 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #d1e4f7;
+}
+
+.examinationsContainer {
+  padding: 20px;
+}
+
+.examinationsContainer .scrollBar {
+  font-size: 20px;
+  font-weight: bold;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.examinationsContainer .scrollBar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.examinationsContainer .scrollBar a:hover {
+  color: red;
+}
+
+.examinationsContainer .scrollBar a:active {
+  color: red;
+}
+
+.examinationsContainer .scrollBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  padding: 20px;
+  list-style: none;
+}
+
+.examinationsContainer .scrollBar ul li {
+  margin: 0 70px 0 20px;
+}
+
+.examinationsContainer .content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.examinationsContainer .content .contentHeader p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.examinationsContainer .content .contentHeader hr {
+  color: #d1e4f7;
+}
+
+.examinationsContainer .content .contentHeader .contentTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.examinationsContainer .content .contentHeader .contentTitle button {
+  background: red;
+  border-radius: 20px;
+  width: 60px;
+  height: 30px;
+  color: #fff;
+  margin-right: 30px;
+  border: none;
+}
+
+.examinationsContainer .content .contentHeader .generateContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  padding: 20px;
+}
+
+.examinationsContainer .content .contentHeader .generateContent label {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.examinationsContainer .content .contentHeader .generateContent select {
+  width: 160px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.examinationsContainer .content .contentHeader .generateContent input {
+  background: red;
+  border-radius: 20px;
+  width: 70px;
+  height: 30px;
+  color: #fff;
+  border: none;
+}
+
+.examinationsContainer .content .userContent {
+  font-size: 20px;
+  padding: 40px;
+}
+/*# sourceMappingURL=examinations.css.map */

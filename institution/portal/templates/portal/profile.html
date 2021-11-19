@@ -1,0 +1,75 @@
+{% extends 'portal/home.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{%static 'portal/styles/profile.css'%}">
+<link rel="stylesheet" href="{%static 'portal/styles/home.css'%}">
+{% endblock %}
+
+{%block content%}
+<div class="profileContainer">
+    <div class="contacts">
+        <ul>
+            <h3>Personal Information</h3>
+            <hr>
+            <li>Registration number: {{request.user.student.regno}}</li>
+            <li>Name: {{request.user.first_name}} {{request.user.last_name}}</li>
+            <li>National ID: {{request.user.student.nationalid}}</li>
+            <li>Date of Birth: {{request.user.student.dob}}</li>
+            <li>Gender: {{request.user.student.gender}}</li>
+            <li>Marital Status: {{request.user.student.maritalstatus}}</li>
+            <li>Nationality: {{request.user.student.nationality}}</li>
+            <li>Religion: {{request.user.student.religion}}</li>
+            <li>Disability: {{request.user.student.disability}}</li>
+        </ul>
+    </div>
+    <div class="contacts">
+        <ul>
+            <div class="titleEdit">
+                <h3>Contacts</h3>
+                <a href="#">Edit</a>
+            </div>
+            <hr>
+            <li>Telephone number: {{request.user.student.phone}}</li>
+            <li>Email: {{request.user.email}}</li>
+            <li>Home Address: {{request.user.student.homeaddress}}</li>
+            <li>County: {{request.user.student.county}}</li>
+            <li>SubCounty: {{request.user.student.subcounty}}</li>
+            <li>Constituency: {{request.user.student.constituency}}</li>
+        </ul>
+    </div>
+    <div class="contacts">
+        <ul>
+            <div class="titleEdit">
+                <h3>Emergency Contacts</h3>
+                <a href="#">Edit</a>
+            </div>
+            <hr>
+            <li>Name: {{request.user.student.emergencycontact.firstname}} {{request.user.student.emergencycontact.lastname}}</li>
+            <li>Relationship: {{request.user.student.emergencycontact.relationship}} </li>
+            <li>Telephone Number: {{request.user.student.emergencycontact.phone}} </li>
+            <li>Email: {{request.user.student.emergencycontact.email}}</li>
+            <li>Address: {{request.user.student.emergencycontact.address}}</li>
+            <li>Remarks: {{request.user.student.emergencycontact.remarks}}</li>
+           
+        </ul>
+    </div>
+    <div class="contacts">
+        <ul>
+            <div class="titleEdit">
+                <h3>Dependants</h3>
+                <a href="#">Edit</a>
+            </div>
+            <hr>
+            <li>Name: {{request.user.student.dependant.firstname}} {{request.user.student.dependant.lastname}}</li>
+            <li>Relationship: {{request.user.student.dependant.relationship}} </li>
+            <li>Telephone Number: {{request.user.student.dependant.phone}} </li>
+            <li>Email: {{request.user.student.dependant.email}}</li>
+            <li>Address: {{request.user.student.dependant.address}}</li>
+            <li>Occupation: {{request.user.student.dependant.occupation}}</li>
+            <li>Notes: {{request.user.student.dependant.notes}}</li>
+            
+        </ul>
+    </div>
+</div>
+{% endblock %}
+

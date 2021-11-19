@@ -1,0 +1,43 @@
+{% extends 'portal/home.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{%static 'portal/styles/clearance.css'%}">
+<link rel="stylesheet" href="{%static 'portal/styles/home.css'%}">
+{% endblock %}
+
+{%block content%}
+<div class="examinationsContainer">
+    <div class="scrollBar">
+        <ul>
+            <li><a href="#">Apply For Clearance</a></li>
+            <li><a href="#">Clearance Certificate</a></li>
+            <li><a href="#">Clearance History</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="contentHeader">
+            <div class="contentTitle">
+                <h3>
+                    Apply
+                </h3>
+                <p>
+                    Apply for Clearance
+                </p>
+            </div>
+            <hr>
+            <form action="" class="generateContent">
+                    <label for="clearance-reason">Reason for Clearance</label><br>
+                    <select name="clearance-reason" id="clearance-reason">
+                        <option value="1">Reason 1</option>
+                        <option value="2">Reason 2</option>
+                        <option value="3">Reason 3</option>
+                        <option value="4">Reason 4</option>
+                    </select>
+                <hr>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

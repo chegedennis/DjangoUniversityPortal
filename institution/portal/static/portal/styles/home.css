@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background: #09168d;
+  height: 50px;
+  padding: 10px;
+}
+
+header .userDetails {
+  float: right;
+  margin-right: 2rem;
+}
+
+header .userDetails a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+header .userLinks {
+  top: 4.3em;
+  right: 0;
+  background: #fff;
+  height: 200px;
+  width: 20%;
+  position: absolute;
+  z-index: 999;
+  border-radius: 10px;
+  display: none;
+}
+
+header .userLinks h3 {
+  padding: 0;
+  margin: 0 5px 0 0;
+  text-align: right;
+  font-weight: bold;
+}
+
+header .userLinks h3:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+header .userLinks a {
+  color: #000;
+}
+
+header .userLinks a:hover {
+  color: greenyellow;
+}
+
+header .userLinks li {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.homeContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+}
+
+.homeContainer .navigation {
+  background: #3d99e4;
+}
+
+.homeContainer .navigation .logo {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.homeContainer .navigation li {
+  margin: 40px;
+}
+
+.homeContainer .navigation a {
+  text-decoration: none;
+  color: #000;
+}
+
+.homeContainer .navigation a:hover {
+  color: red;
+}
+
+.homeContainer .details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  background: #d1e4f7;
+  padding: 20px;
+}
+
+.homeContainer .details .news {
+  margin: 1rem;
+}
+
+.homeContainer .details .news .newsItem {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.homeContainer .details .news .newsItem section {
+  padding: .5rem;
+}
+
+.homeContainer .details .news .newsItem h3 span {
+  float: right;
+  font-weight: normal;
+}
+
+.homeContainer .details .news .newsItem div {
+  padding: .2rem;
+}
+
+.homeContainer .details .news .newsItem a {
+  float: right;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: blue;
+}
+
+.homeContainer .details .info .fees, .homeContainer .details .info .hostel {
+  background: #ff8f3e;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  margin: 1rem;
+}
+
+.homeContainer .details .info .hostel {
+  background: #046388;
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,24 @@
+{% extends 'portal/home.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{%static 'portal/styles/messages.css'%}">
+<link rel="stylesheet" href="{%static 'portal/styles/home.css'%}">
+{% endblock %}
+
+{%block content%}
+<div class="examinationsContainer">
+    <div class="scrollBar">
+        <ul>
+            <li><a href="#">New</a></li>
+            <li><a href="#">History</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="booking">
+          You Currently have no Messages
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
