@@ -42,6 +42,8 @@ header .userLinks {
 
 header .userLinks a {
   color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 header .userLinks a:hover {
