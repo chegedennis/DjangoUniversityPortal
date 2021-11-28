@@ -12,18 +12,28 @@
 </head>
 <body>
     <header>
-        <div class="userDetails">
-            <a id="user" href="#">{{request.user.username}}</a>
-            <div class="userLinks">
-                <h3 id="btnClose">X</h3>
-                <ul>
-                    <li><a href="{% url 'messages' %}">My Messages</a></li>
-                    <li><a href="{% url 'profile' %}">Profile</a></li>
-                    <li><a href="">Change Password</a></li>
-                    <li><a href="{% url 'logoutView' %}">Logout</a></li>
-                </ul>
+        <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menuClose">
+            <div class="close">
+                X
             </div>
         </div>
+        <div class="userDetails">
+            <a id="user" href="#">{{request.user.username}}</a>
+        </div>
+        <div class="userLinks">
+            <ul>
+                <li><a href="{% url 'messages' %}">My Messages</a></li>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="">Change Password</a></li>
+                <li><a href="{% url 'logoutView' %}">Logout</a></li>
+            </ul>
+        </div>
+
     </header>
     <div class="homeContainer">
         <section class="navigation">
@@ -101,16 +111,20 @@
         </section>
         {% endblock %}
     </div>
-<script>
-    const btnClose = document.getElementById("btnClose")
-        profile = document.querySelector(".userLinks")
-        userLink = document.querySelector("#user");
-    userLink.addEventListener("click", ()=>{
-        profile.style.display = "block";
-    })
-    btnClose.addEventListener("click", ()=>{
-        profile.style.display = "none";
-    })
-</script>
+    <script>
+        const menuClose = document.querySelector(".menuClose");
+        const menuBtn = document.querySelector(".menu");
+        const profile = document.querySelector(".userLinks");
+        menuBtn.addEventListener("click",()=>{
+                profile.style.display = "block"
+                menuBtn.style.display = "none"
+                menuClose.style.display = "block"
+        });
+        menuClose.addEventListener("click", ()=>{
+            profile.style.display = "none"
+            menuClose.style.display = "none"
+            menuBtn.style.display = "block"
+        })
+    </script>
 </body>
 </html>

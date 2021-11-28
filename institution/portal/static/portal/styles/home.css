@@ -12,15 +12,18 @@ header {
   background: #09168d;
   height: 50px;
   padding: 10px;
+  padding-bottom: .4rem;
 }
 
 header .userDetails {
+  margin-right: 1rem;
+  top: 1rem;
+  right: 1.4rem;
   float: right;
-  margin-right: 2rem;
 }
 
 header .userDetails a {
-  font-size: 20px;
+  font-size: 1.8rem;
   text-decoration: none;
   color: #fff;
 }
@@ -35,18 +38,6 @@ header .userLinks {
   z-index: 999;
   border-radius: 10px;
   display: none;
-}
-
-header .userLinks h3 {
-  padding: 0;
-  margin: 0 5px 0 0;
-  text-align: right;
-  font-weight: bold;
-}
-
-header .userLinks h3:hover {
-  cursor: pointer;
-  color: gray;
 }
 
 header .userLinks a {
@@ -142,5 +133,88 @@ header .userLinks li {
 
 .homeContainer .details .info .hostel {
   background: #046388;
+}
+
+.menu {
+  float: right;
+  width: 2rem;
+  height: 2rem;
+  background: #333;
+  top: .8rem;
+  right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: .5rem;
+  padding-bottom: .2rem;
+  border-radius: .5rem;
+  display: block;
+}
+
+.menu .line {
+  color: #fff;
+  background: #fff;
+  width: 60%;
+  height: .05rem;
+  margin: .2rem;
+  padding: .08rem;
+  border-radius: .2rem;
+}
+
+.menu:hover {
+  background: #666;
+  cursor: pointer;
+}
+
+.menuClose {
+  float: right;
+  width: 2rem;
+  height: 2rem;
+  background: #333;
+  top: .8rem;
+  right: 1rem;
+  text-align: center;
+  padding: .3rem;
+  border-radius: .2rem;
+  display: none;
+}
+
+.menuClose .close {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.menuClose:hover {
+  background: #666;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .homeContainer {
+    display: block;
+  }
+  .userLinks {
+    padding: 1rem;
+  }
+  .userLinks ul {
+    padding: .1rem;
+    margin-top: 0;
+  }
+  .userLinks ul li {
+    margin: .8rem;
+  }
 }
 /*# sourceMappingURL=home.css.map */
