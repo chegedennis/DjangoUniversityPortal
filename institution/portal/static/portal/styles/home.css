@@ -200,11 +200,6 @@ header .userLinks li {
 }
 
 @media (max-width: 500px) {
-  .navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .homeContainer {
     display: block;
   }
