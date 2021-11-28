@@ -28,7 +28,6 @@ header{
         }
 
     }
-
     .userLinks{
         top: 4.3em;
         right: 0;
@@ -39,9 +38,10 @@ header{
         z-index: 999;
         border-radius: 10px;
         display: none;
-
         a{
             color: #000;
+            text-decoration: none;
+            font-size: 1.2rem;
 
             &:hover{
                 color: greenyellow;
